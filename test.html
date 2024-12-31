@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>DOM</title>
+</head>
+
+<body>
+    <p id="demo">This is my page</p>
+    <button onclick="changeContent()">Click me </button>
+    <br>
+    <img src="nails.jpeg" id="nails" alt="nails">
+    <script>
+        let demo = document.getElementById("demo");
+        demo.innerHTML = "This is my page";
+        console.log(demo);
+        function changeContent() {
+            demo.innerHTML = "This is my new page";
+        }
+    </script>
+    </body>
+</html>
